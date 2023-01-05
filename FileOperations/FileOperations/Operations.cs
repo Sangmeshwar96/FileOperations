@@ -28,5 +28,15 @@ namespace FileOperations
             else
                 Console.WriteLine("File Not Exists");
         }
+        public static void ReadText(string filepath)
+        {
+            if (File.Exists(filepath))
+            {
+                string lines = File.ReadAllText(filepath);
+                Console.WriteLine(lines);
+            }
+            else
+                Console.WriteLine("File Not Exists");
+        }
     }
 }
