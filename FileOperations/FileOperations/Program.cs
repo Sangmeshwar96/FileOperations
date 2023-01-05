@@ -12,8 +12,9 @@ namespace FileOperations
             Operations.FileExists(filepath);
             Operations.ReadLines(filepath);
             Operations.ReadText(filepath);
-            Operations.FileCopy(filepath, newfilepath);
-            Operations.FileDelete(newfilepath);
+            //Operations.FileCopy(filepath, newfilepath);
+            //Operations.FileDelete(newfilepath);
+            Operations.FileStreamReader(filepath);
         }
     }
 }
