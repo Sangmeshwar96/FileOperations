@@ -10,6 +10,7 @@ namespace FileOperations
             string filepath = @"C:\Users\hp\source\repos\FileOperations\FileOperations\Text.txt";
             Operations.FileExists(filepath);
             Operations.ReadLines(filepath);
+            Operations.ReadText(filepath);
         }
     }
 }
