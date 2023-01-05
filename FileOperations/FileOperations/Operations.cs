@@ -75,5 +75,21 @@ namespace FileOperations
             else
                 Console.WriteLine("File Not Exists");
         }
+        public static void FileStreamWriter(string filepath)
+        {
+            if (File.Exists(filepath))
+            {
+                using (StreamWriter sr = new StreamWriter(filepath))
+                {
+                    string word = "Straem Reader And Writer";
+                    sr.WriteLine(word);
+                    sr.Close();
+                    Console.WriteLine(File.ReadAllText(filepath));
+                }
+            }
+            else
+                Console.WriteLine("File Not Exists");
+
+        }
     }
 }
